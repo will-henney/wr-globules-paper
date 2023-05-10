@@ -3,8 +3,13 @@
 
 Paper on analysis of photoevaporating globules in M1-67 around WR 124 and their interaction with the stellar wind
 
-This work is licensed under a
-[Creative Commons Attribution-ShareAlike 4.0 International License][cc-by-sa].
+## Draft abstract
+
+![CleanShot 2023-05-10 at 11 57 43](https://github.com/will-henney/wr-globules-paper/assets/161264/14d5c343-3248-4945-bfca-cde1c77e17c5)
+
+
+Until publication in journal this work is licensed under a
+[Creative Commons Attribution-ShareAlike 4.0 International License][cc-by-sa]. The plan is to switch to a more liberal license after publication. 
 
 [![CC BY-SA 4.0][cc-by-sa-image]][cc-by-sa]
 
