@@ -1,0 +1,132 @@
+\RequirePackage{amsmath}
+\documentclass[twocolumn, times]{aastex631}
+\usepackage[spanish,es-minimal,english]{babel}
+\usepackage[utf8]{inputenc}
+\usepackage{natbib}
+%\usepackage{microtype}
+\usepackage{hyperref}
+\usepackage{savesym}
+\savesymbol{tablenum}
+\usepackage{siunitx}
+\restoresymbol{SIX}{tablenum}
+\usepackage[varg]{newtxmath}
+\usepackage{newtxtext}
+\usepackage{booktabs}
+\usepackage{array}   % for \newcolumntype macro
+\newcolumntype{L}{>{$}l<{$}} % math-mode version of lrc column types
+\newcolumntype{R}{>{$}r<{$}} 
+\newcolumntype{C}{>{$}c<{$}} 
+
+\bibliographystyle{aasjournal}
+
+\newcommand\ION[2]{#1\,\scalebox{0.9}[0.8]{\uppercase{#2}}}
+\newcounter{ionstage}
+\renewcommand{\ion}[2]{\setcounter{ionstage}{#2}% 
+  \ensuremath{\mathrm{#1\,\scriptstyle\Roman{ionstage}}}}
+\newcommand\hii{\ion{H}{2}}
+\newcommand\hi{\ion{H}{1}}
+\newcommand\heii{\ion{He}{2}}
+\newcommand\hei{\ion{He}{1}}
+\newcommand\siii{[\ion{S}{3}]}
+\newcommand\sii{[\ion{S}{2}]}
+\newcommand\oiii{[\ion{O}{3}]}
+\newcommand\ariii{[\ion{Ar}{3}]}
+\newcommand\ariv{[\ion{Ar}{4}]}
+\newcommand\ARIV{[\ION{Ar}{iv}]}
+\newcommand\Raman{\ensuremath{_{\text{Raman}}}}
+\def\th#1#2{\(\theta^{#1}\)\,Ori~#2}
+\newcommand\wn{\ensuremath{\tilde{\nu}}}
+\newcommand\Wav[1]{\ensuremath{\lambda #1}}
+
+% Chemical formulae
+\newcommand*\chem[1]{\ensuremath{\mathrm{#1}}}
+% Atomic term symbols
+\newcommand\Config[1]{\ensuremath{\mathrm{#1}}}
+\newcommand\Term[3]{\ensuremath{\mathrm{#1\ ^{#2}#3}}}
+\newcommand\Level[4]{\ensuremath{\mathrm{#1\ ^{#2}#3_{#4}}}}
+
+\newcommand\ha{\ensuremath{\text{H}\alpha}}
+\newcommand\hb{\ensuremath{\text{H}\beta}}
+\newcommand\lya{\ensuremath{\text{Ly}\alpha}}
+\newcommand\lyb{\ensuremath{\text{Ly}\beta}}
+
+\newcommand{\wind}{\ensuremath{_{\text{w}}}}
+\newcommand\snrj{SNR~J\num{0059.4}\num{-7210}}
+
+\begin{document}
+\title{Shielded from the wind: evaporating neutral globules around a Wolf-Rayet star}
+\shorttitle{Evaporating globules around WR~124}
+\author[0000-0001-6208-9109]{William J. Henney}
+\affiliation{%
+  \foreignlanguage{spanish}{Instituto de Radioastronomía y
+    Astrofísica, Universidad Nacional Autónoma de México, Apartado
+    Postal 3-72, 58090 Morelia, Michaoacán, Mexico}
+}
+\email{w.henney@irya.unam.mx}
+\correspondingauthor{William J. Henney}
+
+\author[0000-0000-0000-0000]{Roberto Reyes-Cabañas}
+\affiliation{%
+  \foreignlanguage{spanish}{Instituto de Radioastronomía y
+    Astrofísica, Universidad Nacional Autónoma de México, Apartado
+    Postal 3-72, 58090 Morelia, Michaoacán, Mexico}
+}
+
+\author[0000-0002-5456-4472]{S. Jane Arthur}
+\affiliation{%
+  \foreignlanguage{spanish}{Instituto de Radioastronomía y
+    Astrofísica, Universidad Nacional Autónoma de México, Apartado
+    Postal 3-72, 58090 Morelia, Michaoacán, Mexico}
+}
+
+% \author[0000-0002-5406-0813]{Jesús A. Toalá}
+% \affiliation{%
+%   \foreignlanguage{spanish}{Instituto de Radioastronomía y
+%     Astrofísica, Universidad Nacional Autónoma de México, Apartado
+%     Postal 3-72, 58090 Morelia, Michaoacán, Mexico}
+%   }
+
+\begin{abstract}
+  The circumstellar nebula M1-67 around the Wolf-Rayet star WR~124
+  contains hundreds of small neutral globules, as revealed by JWST images.
+  However, despite the powerful stellar wind from the star, the globules
+  do not interact directly with the wind.
+  Instead, they are hydrodynamically shielded by a transonic warm ionized
+  flow away from their surfaces that is induced by the Lyman continuum radiation
+  of the star.
+  This inwardly directed photoevaporation flow shocks against the
+  outflowing stellar wind to form dense hemispherical ionized shells
+  that are a few times larger than the globules
+  and which contribute a significant fraction of the recombination line luminosity
+  of the nebula.
+  We analyze archival HST images of the nebula and estimate the size, brightness,
+  and ionized density of each photoevaporation flow and accompanying interaction shell.
+  We show that \textit{something, something, something, \dots}.
+  We compare the globule-wind interaction around WR~124 with similar interactions
+  seen elsewhere, such as photoevaporating disks (proplyds) in the Orion Nebula.
+\end{abstract}
+
+\keywords{Circumstellar matter; Stars: winds, outflows}
+
+%\object{M42}
+
+\section{Introduction}
+\label{sec:introduction}
+
+\section{Conclusions}
+\label{sec:conclusions}
+
+\begin{acknowledgments}
+  Thank you.
+\end{acknowledgments}
+
+\facilities{HST; JWST}
+
+\bibliography{wr-globules-refs}
+
+\end{document}
+
+%%% Local Variables:
+%%% mode: latex
+%%% TeX-master: t
+%%% End:

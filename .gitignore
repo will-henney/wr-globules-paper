@@ -1,0 +1,10 @@
+/auto/
+*.synctex.gz
+wr-globules.pdf
+wr-globules.out
+wr-globules.log
+*.fls
+*.fdb_latexmk
+*.blg
+*.bbl
+*.aux
