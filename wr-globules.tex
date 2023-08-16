@@ -113,6 +113,39 @@
 \section{Introduction}
 \label{sec:introduction}
 
+Las estrellas Wolf-Rayet son estrellas masivas evolucionadas que tienen una gran perdida de masa debido a su gran viento solar lo que produce una nebulosa a su alrededor. En las recientes imagenes del JWST, se ha podido apreciar con gran detalle la presencia de grumos en la nebulosa circumestellar en M1-67. Estos grumos son globulos moleculares neutros que tienen una gran densidad y pueden ser principalmente de hidrogeno neutro. 
+
+\begin{center}
+\begin{tabular}{r l}
+
+$\dot{M}$ & $2\times10^{-5}M_\circ/yr$ \\
+$v_\infty$ & 710 km/s \\
+D & 5429 pc
+
+\end{tabular} 
+\end{center}
+
+Estos globulos moleculares presentan un flujo fotoevaporativo debido a la radiacioin ultravioleta que incide por parte de la estrella, el cual choca con el viento estelar proveniente de la misma estrella. Debido al equilibrio entre ionizaciones y recombinaciones podemos ver estos globulos por su emision en $H_\alpha$. La interaccion del flujo fotoevaporativo de estos globulos actuan de una manera similar a los proplyds por lo  que en las imagenes del JWST las podemos ver como  las estelas rosadas, donde el choqeu se da en la parte mas luminosa, a las cuales le podemos medir su brillo gracias a las observaciones del HST.
+
+\section{Analisis observacional}
+\label{sec:analisis}
+
+Una vez que localizamos estos globulos decidimos caracterizar tres regiones en esta unteraccion de los dos vientos supersonicos, la parte central que es nuestro globulo molecular de la cual sale el flujo fotoevaporativo con un numero de Mach $M_0$ de la superficie, la parte interna del choque y la parte chocada con el viento estelar. De las imagenes del HST le medimos su brillo y ajustamos dos gaussianas y una constante a este perfil de brillo.
+
+Gracias a esto podemos comparar la presion de la cascara con la presion RAM del viento. Para esto consideramos que la presion RAM del viento es 
+\[P_{RAM}=\frac{\dot{M}v_\infty}{4\pi R^2}\]
+donde $R$ es la distancia del globulo a la estrella, y la presion de la cascara es 
+\[P_{SHELL}=\rho c_s^2\] 
+y para conocer estos parametros de densidad y velocidad del sonido usamos primero que $P=nkT=\rho c_s^2$ de donde obtenemos que $c_s^2=\frac{k T}{\overline{m}}$ considerando una $T=6000 K$ y una $\overline{m}=0.6m_p$ considerando que puede haber una fraccion de helio.
+Para la densidad usamos la medida de emision de lo cual tenemos que $EM=n^2\ell$, y para convertir el brillo obtenido por las observaciones del HST usamos la conversion 
+\[EM=\frac{B 4\pi 0.0137}{(h\nu)_{H_\alpha}3.61\times10^5}\]
+donde $B$ es el brillo de la cascara chocada que obtuvimos a partir del ajuste al perfil del brillo. Y $\ell$ es la linea donde tenemos el pico maximo en la EM medida tangencialmente que geometricamente podemos tomar con $\ell=2\sqrt{r h}$ donde $h$ es el ancho de la cascara chocada y $r$ el radio.
+
+Para que tengamos este equilibrio de ionizacion y recombinacion en la cascara chocada, debemos tener que la $P_{RAM}$ es comparable con la $P_{SHELL}$, pero como vemos muchas de las presiones de algunos globulos caen por debajo de la presion RAM y esto es debido a que necesitamos corregir la distancia proyectada que vemos entre los globulos con la estrella y la presion RAM, por lo que para corregir por el angulo de inclinacion con respecto al plano del cielo, tenemos que
+\[R_{proyected}=R \cos(i)\]
+\[P_{RAM}=\frac{\dot{M}v_\infty}{4\pi R^2}\cos^{5/2}(i)\]
+A partir de estas correciones podemos encontrar la distancia real y el angulo de inclinacion al cual lo vemos por lo que vemos una distribucion radial mas coherente y no una binomial que se puede ver sin la correcion del angulo de inclinacion que nos haria pensar que algo esta sucediendo a ciertas distancias
+
 \section{Conclusions}
 \label{sec:conclusions}
 
