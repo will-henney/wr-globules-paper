@@ -113,22 +113,59 @@
 \section{Introduction}
 \label{sec:introduction}
 
-Las estrellas Wolf-Rayet son estrellas masivas evolucionadas que tienen una gran perdida de masa debido a su gran viento solar lo que produce una nebulosa a su alrededor. En las recientes imagenes del JWST, se ha podido apreciar con gran detalle la presencia de grumos en la nebulosa circumestellar en M1-67. Estos grumos son globulos moleculares neutros que tienen una gran densidad y pueden ser principalmente de hidrogeno neutro. 
+\subsection{Glóbulos y sus flujos fotoevapoorativos}
+Los glóbulos son concentraciones densas de gas neutro y polvo que se pueden encontrar tanto en regiones de formación estelar como en nebulosas alrededor de estrellas evolucionadas, por lo que tenemos una gran vcariedad de tamaños (1--\SI{e-2}{pc}). Estos góbulos se pueden formar poro colapso gravitacional, inestabilidades térmicas o turbulencia. Generalmente se le suele llamar nudos a los glóbulos que se encuentran en nebulosas circunestelares, y suelen ser las de menor tamaño ($\leq$\SI{e-2}{pc}).
 
-\begin{center}
-\begin{tabular}{r l}
+Cuando los glóbulos interactúan con la radiación ionizante de una estrella jóven masiva, este comienza a ionizar el glóbulo, provocando que un flujo de partículas ionizadas viajen en dirección a la estrella, este es conocido como flujo fotoevaporativo (). \textbf{falta decir acerca de las condiciones de la EM para que no ionizar todo el glóbulo y decir lo de equilibrio de ionización}.
 
-$\dot{M}$ & $2\times10^{-5}M_\circ/yr$ \\
-$v_\infty$ & 710 km/s \\
-D & 5429 pc
+\subsection{Estrellas WR}
 
-\end{tabular} 
-\end{center}
+Las estrellas Wolf-Rayet (WR) son estrellas evolucionadas que se caracterizan por tener intensas líneas de eimisión de  He, C, O y N. Tienen una alta pérdida de masa y líneas anchas de emisón debido a sus fuertes vientos que pueden llegar a ser de $\sim 1000 km/h$.
 
-Estos globulos moleculares presentan un flujo fotoevaporativo debido a la radiacioin ultravioleta que incide por parte de la estrella, el cual choca con el viento estelar proveniente de la misma estrella. Debido al equilibrio entre ionizaciones y recombinaciones podemos ver estos globulos por su emision en $H_\alpha$. La interaccion del flujo fotoevaporativo de estos globulos actuan de una manera similar a los proplyds por lo  que en las imagenes del JWST las podemos ver como  las estelas rosadas, donde el choqeu se da en la parte mas luminosa, a las cuales le podemos medir su brillo gracias a las observaciones del HST.
+En la nebulosa M1-67 podemos encontrar la estrella WR 124, que se encuentra a una distancia de 5429$\pm$\SI{542}{pc}. Esta estrella tiene un viento termminal de \SI{710}{km.s^{-1}} y una $\dot{M}=\SI{2e-5}{M_\circ.yr^{-1}}$. Con las imagenes del JWST podemos notar la presencia de muchos glóbulos en toda la nebulosa. Así como la posible interacción que hay entre el fujo fotoevaporativo de los glóbulos, provocado por los fotones ionizantes de la estrella WR 124, con la presión RAM el viento estelar (imagen). 
 
-\section{Analisis observacional}
-\label{sec:analisis}
+...
+
+\section{Datos y globulos en la nebulosa}
+\label{sec:globulos en la nebulosa}
+
+En la Figura (imagen) podemos observar que los glóbulos se caracterizan por tres componentes: El glóbulo, una cáscara chocada y una estela (ver Figura ). De esta manera se localizaron 168 glóbulos en toda la nebulosa.
+
+En la Sec () haremos el analisis usando las observaciones de M1-67 en H$\alpha$ del HST y las observaciones de los filtros F090W,... del JWST (ver Tabla ). Aprvechando que tenemos una gran variedad de filtros con el JWST, podemos hacer una comninación de imágenes para ver mejor la morfología de los diferentes compnentes con los que locaizados los góbulos. Para hacer esta combinación, primero vamos a convolucioar todas las imágenes para tener la misma resolucion que el filtro F444W ya que es el filtro de menor resolución que utilizaremos.
+
+...
+
+\section{Modelo Hidrodinámico}
+\label{Sec:Modelo}
+
+En esta sección vamos a detallar el modelo Hidrodinámico para explicar como actúa una presión externa sobre los flujos fotoevaporativos.
+Para este modelo vamos a considerar que el glóbulo ha llegado a su compresón máxima, por lo que vamos a tener un equilibrio de ionización en el IF. Como vemos en la Figura () vamos a considerar que el glóbulo tiene forma esférica con radio $r_\mathrm{core}$, el flujo fotoevaporativo saliendo de la base del glóbulo en dirección a la estrella. Este flujo fotoevaporativo es un flujo transónico desde el punto de vista del IF. Suponiendo que el IF es delgado comparado con $r_\mathrm{shell}$, vamos a considerar que el punto sónico del flujo fotoevaporativo se da en la base del glóbulo y que aumenta conforme este avanza hacia la estrella.
+
+En este modelo vamos a considerar que la presión del flujo fotoevaporativo va a estar en equilibrio con la presión externa que interactúa. Este equilibrio se dará hasta un radio $r_\mathrm{shell}$, donde tendremos una cáscara chocada delgada.
+
+En este modelo no vamos a considerar fuerzas externas, además solo vamos a considerar que unicamente el glóbulo está soportado por campo mágnetico.
+
+En $r_\mathrm{core}$ vamos a considerar que tenemos una densidad $\rho_\mathrm{core}$, un número de Mach $M=1$, y para el flujo fotoevaporativo vamos a considerar tanto la presión hidrodinámica como la presión térmica
+\begin{equation}\label{ec:Presion total}
+    P_\mathrm{tot}=n\bar{m}c_\mathrm{s}^2+n\bar{m}u^2=\rho c_\mathrm{s}^2(1+M^2)
+\end{equation}
+donde $n$ es la densidad númerica, $\bar{m}$ es la mas promedio de las partículas, $c_\mathrm{s}$ la velocidad del sonido en el gas ionizado, $u$ la velocidad del gas, $\rho$ la densidad por unidad de masa y $M$ el número de Mach.
+
+En este modelo estamos considerando que el equilibrio de presiones se da a un radio $r_\mathrm{shell}$, donde la presión inicial del flujo fotoevaporativo ha disminuido un afracción $f$. Por lo que la presión cambia como
+\begin{equation} \label{ec: P/P_0}
+    f=\frac{P}{P_\mathrm{core}}=\frac{\rho}{\rho_\mathrm{core}}\frac{1+M^2}{2},
+\end{equation}
+donde $P_\mathrm{core}$ es la presión del flujo fotoevaporativo en la base del glóbulo y $P$ la presión del flujo fotoevacporativo justo antes de $r_\mathrm{shell}$. Considerando la ecuación de conservación de masa y la ecuación de Bernoulli isotérmica en la ecuación \ref{ec:Presion total}, tenemos las ecuaciones
+\begin{equation}\label{ec: rho/rho_0}
+    \rho r_\mathrm{shell}^2M=\rho_\mathrm{core}r_\mathrm{core}^2,
+\end{equation}
+\begin{equation}\label{ec: r/r_0}
+    \frac{r}{r_\mathrm{core}}=M^{-1/2}exp\left(\frac{M^2-1}{4}\right).
+\end{equation}
+Por lo que podemos resolver de manera númerica el sistema de ecuaciones \ref{ec: P/P_0}, \ref{ec: rho/rho_0} y \ref{ec: r/r_0} si le damos diferentes valores a $f$.
+
+\section{Aplicación del modelo}
+\label{Sec:Aplicacioin}
 
 Una vez que localizamos estos globulos decidimos caracterizar tres regiones en esta unteraccion de los dos vientos supersonicos, la parte central que es nuestro globulo molecular de la cual sale el flujo fotoevaporativo con un numero de Mach $M_0$ de la superficie, la parte interna del choque y la parte chocada con el viento estelar. De las imagenes del HST le medimos su brillo y ajustamos dos gaussianas y una constante a este perfil de brillo.
 
