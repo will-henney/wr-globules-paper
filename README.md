@@ -3,6 +3,8 @@
 
 Paper on analysis of photoevaporating globules in M1-67 around WR 124 and their interaction with the stellar wind
 
+Note that this is synced with Overleaf via GitHub
+
 ## Draft abstract 2023-05-10
 
 ![CleanShot 2023-05-10 at 11 57 43](https://github.com/will-henney/wr-globules-paper/assets/161264/14d5c343-3248-4945-bfca-cde1c77e17c5)
@@ -15,6 +17,14 @@ Some relevant [discussions][glob-repo-discussions] can be found in the Roberto g
 
 Until publication in journal this work is licensed under a
 [Creative Commons Attribution-ShareAlike 4.0 International License][cc-by-sa]. The plan is to switch to a more liberal license after publication. 
+
+## Recommendations for syncing
+
+- If working on a local machine, then it is best to always first check Overleaf and push changes to GitHub from there *before* pushing your local changes to GitHub. 
+- This gives you the chance to pull down the Overleaf changes and rebase or merge in the comfort of your own machine before pushing them. 
+- Then, when you are done, make sure to pull the changes from GitHub to Overleaf. 
+- If you forget to do this, it is not a disaster, but you may have to deal with merge conflicts on the GitHub site, which is less convenient. 
+
 
 [![CC BY-SA 4.0][cc-by-sa-image]][cc-by-sa]
 
